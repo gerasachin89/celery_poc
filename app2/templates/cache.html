@@ -1,0 +1,54 @@
+
+{% load staticfiles %}
+{% load thumbnail %}
+
+{% load cache %}
+{% cache 500 content %}
+{% block content %}
+
+<!-- <img src="{% thumbnail recipe.image '768' as im %}{{ im.url }}{% endthumbnail %}" alt="{{recipe.first_name}}"/> -->
+
+<!-- {% thumbnail recipe.image '768' as im  %}
+    <img src="{{ im.url }}" width="{{ im.width }}" height="{{ im.height }}">
+{% endthumbnail %} -->
+
+<!-- {% thumbnail recipe.image "100x100" crop="center" as im %}
+    <img src="{{ im.url }}" width="{{ im.width }}" height="{{ im.height }}">
+{% endthumbnail %} -->
+sss
+
+
+
+
+  <img src="{{ recipe.image.url }}/" class="img img-responsive" alt="Use A Private Testing Area">
+    <img src="{{ recipe.image.url }}/" class="img img-responsive" alt="Use A Private Testing Area">
+    <img src="{{ recipe.image.url }}/" class="img img-responsive" alt="Use A Private Testing Area">
+    <img src="{{ recipe.image.url }}/" class="img img-responsive" alt="Use A Private Testing Area">
+    <img src="{{ recipe.image.url }}/" class="img img-responsive" alt="Use A Private Testing Area">
+    <img src="{{ recipe.image.url }}/" class="img img-responsive" alt="Use A Private Testing Area">
+    <img src="{{ recipe.image.url }}/" class="img img-responsive" alt="Use A Private Testing Area">
+    <img src="{{ recipe.image.url }}/" class="img img-responsive" alt="Use A Private Testing Area">
+    <img src="{{ recipe.image.url }}/" class="img img-responsive" alt="Use A Private Testing Area">
+    <img src="{{ recipe.image.url }}/" class="img img-responsive" alt="Use A Private Testing Area">
+    <img src="{{ recipe.image.url }}/" class="img img-responsive" alt="Use A Private Testing Area">
+    <img src="{{ recipe.image.url }}/" class="img img-responsive" alt="Use A Private Testing Area">
+    <img src="{{ recipe.image.url }}/" class="img img-responsive" alt="Use A Private Testing Area">
+    <img src="{{ recipe.image.url }}/" class="img img-responsive" alt="Use A Private Testing Area">
+    <img src="{{ recipe.image.url }}/" class="img img-responsive" alt="Use A Private Testing Area">
+    <img src="{{ recipe.image.url }}/" class="img img-responsive" alt="Use A Private Testing Area">
+    <img src="{{ recipe.image.url }}/" class="img img-responsive" alt="Use A Private Testing Area">
+    <img src="{{ recipe.image.url }}/" class="img img-responsive" alt="Use A Private Testing Area">
+    <img src="{{ recipe.image.url }}/" class="img img-responsive" alt="Use A Private Testing Area">
+    <img src="{{ recipe.image.url }}/" class="img img-responsive" alt="Use A Private Testing Area">
+    <img src="{{ recipe.image.url }}/" class="img img-responsive" alt="Use A Private Testing Area">
+    <img src="{{ recipe.image.url }}/" class="img img-responsive" alt="Use A Private Testing Area">
+    <img src="{{ recipe.image.url }}/" class="img img-responsive" alt="Use A Private Testing Area">
+    <img src="{{ recipe.image.url }}/" class="img img-responsive" alt="Use A Private Testing Area">
+    <img src="{{ recipe.image.url }}/" class="img img-responsive" alt="Use A Private Testing Area">
+    <img src="{{ recipe.image.url }}/" class="img img-responsive" alt="Use A Private Testing Area">
+    <img src="{{ recipe.image.url }}/" class="img img-responsive" alt="Use A Private Testing Area">
+    <img src="{{ recipe.image.url }}/" class="img img-responsive" alt="Use A Private Testing Area">
+
+
+{% endblock content %}
+{% endcache %}

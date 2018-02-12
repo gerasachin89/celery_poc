@@ -1,0 +1,16 @@
+[2017-10-25 15:48:07,367: INFO/MainProcess] Connected to redis://localhost:6379/0
+[2017-10-25 15:48:07,373: INFO/MainProcess] mingle: searching for neighbors
+[2017-10-25 15:48:08,379: INFO/MainProcess] mingle: all alone
+[2017-10-25 15:48:08,387: WARNING/MainProcess] /home/admin3/Project/venv/local/lib/python2.7/site-packages/celery/fixups/django.py:265: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+
+[2017-10-25 15:48:08,388: WARNING/MainProcess] 3@admin3-Lenovo-V110-15ISK ready.
+[2017-10-25 15:48:11,294: INFO/MainProcess] Events of group {task} enabled by remote.
+[2017-10-25 15:48:34,134: INFO/MainProcess] Connected to redis://localhost:6379/0
+[2017-10-25 15:48:34,139: INFO/MainProcess] mingle: searching for neighbors
+[2017-10-25 15:48:35,145: INFO/MainProcess] mingle: all alone
+[2017-10-25 15:48:35,170: WARNING/MainProcess] /home/admin3/Project/venv/local/lib/python2.7/site-packages/celery/fixups/django.py:265: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+
+[2017-10-25 15:48:35,171: WARNING/MainProcess] 3@admin3-Lenovo-V110-15ISK ready.
+[2017-10-25 15:48:36,293: INFO/MainProcess] Events of group {task} enabled by remote.

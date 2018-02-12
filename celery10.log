@@ -1,0 +1,27 @@
+[2017-10-25 15:10:20,492: INFO/MainProcess] Connected to redis://localhost:6379/0
+[2017-10-25 15:10:20,498: INFO/MainProcess] mingle: searching for neighbors
+[2017-10-25 15:10:21,505: INFO/MainProcess] mingle: sync with 1 nodes
+[2017-10-25 15:10:21,505: INFO/MainProcess] mingle: sync complete
+[2017-10-25 15:10:21,515: WARNING/MainProcess] /home/admin3/Project/venv/local/lib/python2.7/site-packages/celery/fixups/django.py:265: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+
+[2017-10-25 15:10:21,515: WARNING/MainProcess] celery10@admin3-Lenovo-V110-15ISK ready.
+[2017-10-25 15:10:26,043: INFO/MainProcess] Events of group {task} enabled by remote.
+[2017-10-25 15:13:56,859: INFO/MainProcess] Connected to redis://localhost:6379/0
+[2017-10-25 15:13:56,867: INFO/MainProcess] mingle: searching for neighbors
+[2017-10-25 15:13:57,875: INFO/MainProcess] mingle: sync with 5 nodes
+[2017-10-25 15:13:57,876: INFO/MainProcess] mingle: sync complete
+[2017-10-25 15:13:57,906: WARNING/MainProcess] /home/admin3/Project/venv/local/lib/python2.7/site-packages/celery/fixups/django.py:265: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+
+[2017-10-25 15:13:57,906: WARNING/MainProcess] celery10@admin3-Lenovo-V110-15ISK ready.
+[2017-10-25 15:14:01,045: INFO/MainProcess] Events of group {task} enabled by remote.
+[2017-10-25 15:17:31,331: INFO/MainProcess] Connected to redis://localhost:6379/0
+[2017-10-25 15:17:31,337: INFO/MainProcess] mingle: searching for neighbors
+[2017-10-25 15:17:32,348: INFO/MainProcess] mingle: sync with 6 nodes
+[2017-10-25 15:17:32,349: INFO/MainProcess] mingle: sync complete
+[2017-10-25 15:17:32,374: WARNING/MainProcess] /home/admin3/Project/venv/local/lib/python2.7/site-packages/celery/fixups/django.py:265: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+
+[2017-10-25 15:17:32,375: WARNING/MainProcess] celery10@admin3-Lenovo-V110-15ISK ready.
+[2017-10-25 15:17:36,047: INFO/MainProcess] Events of group {task} enabled by remote.

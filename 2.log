@@ -1,0 +1,126 @@
+[2017-10-25 14:29:12,233: DEBUG/MainProcess] | Worker: Preparing bootsteps.
+[2017-10-25 14:29:12,235: DEBUG/MainProcess] | Worker: Building graph...
+[2017-10-25 14:29:12,235: DEBUG/MainProcess] | Worker: New boot order: {Beat, Timer, Hub, Queues (intra), Pool, Autoscaler, StateDB, Autoreloader, Consumer}
+[2017-10-25 14:29:12,245: DEBUG/MainProcess] | Consumer: Preparing bootsteps.
+[2017-10-25 14:29:12,245: DEBUG/MainProcess] | Consumer: Building graph...
+[2017-10-25 14:29:12,259: DEBUG/MainProcess] | Consumer: New boot order: {Connection, Events, Mingle, Gossip, Tasks, Control, Heart, Agent, event loop}
+[2017-10-25 14:29:12,348: DEBUG/MainProcess] | Worker: Starting Hub
+[2017-10-25 14:29:12,350: DEBUG/MainProcess] ^-- substep ok
+[2017-10-25 14:29:12,351: DEBUG/MainProcess] | Worker: Starting Pool
+[2017-10-25 14:29:12,507: DEBUG/MainProcess] ^-- substep ok
+[2017-10-25 14:29:12,510: DEBUG/MainProcess] | Worker: Starting Consumer
+[2017-10-25 14:29:12,512: DEBUG/MainProcess] | Consumer: Starting Connection
+[2017-10-25 14:29:12,528: INFO/MainProcess] Connected to redis://localhost:6379/0
+[2017-10-25 14:29:12,530: DEBUG/MainProcess] ^-- substep ok
+[2017-10-25 14:29:12,533: DEBUG/MainProcess] | Consumer: Starting Events
+[2017-10-25 14:29:12,544: DEBUG/MainProcess] ^-- substep ok
+[2017-10-25 14:29:12,546: DEBUG/MainProcess] | Consumer: Starting Mingle
+[2017-10-25 14:29:12,548: INFO/MainProcess] mingle: searching for neighbors
+[2017-10-25 14:29:13,553: INFO/MainProcess] mingle: all alone
+[2017-10-25 14:29:13,553: DEBUG/MainProcess] ^-- substep ok
+[2017-10-25 14:29:13,554: DEBUG/MainProcess] | Consumer: Starting Gossip
+[2017-10-25 14:29:13,557: DEBUG/MainProcess] ^-- substep ok
+[2017-10-25 14:29:13,557: DEBUG/MainProcess] | Consumer: Starting Tasks
+[2017-10-25 14:29:13,559: DEBUG/MainProcess] ^-- substep ok
+[2017-10-25 14:29:13,560: DEBUG/MainProcess] | Consumer: Starting Control
+[2017-10-25 14:29:13,561: DEBUG/MainProcess] ^-- substep ok
+[2017-10-25 14:29:13,561: DEBUG/MainProcess] | Consumer: Starting Heart
+[2017-10-25 14:29:13,562: DEBUG/MainProcess] ^-- substep ok
+[2017-10-25 14:29:13,562: DEBUG/MainProcess] | Consumer: Starting event loop
+[2017-10-25 14:29:13,562: WARNING/MainProcess] /home/admin3/Project/venv/local/lib/python2.7/site-packages/celery/fixups/django.py:265: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+
+[2017-10-25 14:29:13,563: WARNING/MainProcess] 2@less_queue_worker ready.
+[2017-10-25 14:29:13,563: DEBUG/MainProcess] | Worker: Hub.register Pool...
+[2017-10-25 14:29:13,563: DEBUG/MainProcess] basic.qos: prefetch_count->16
+[2017-10-25 14:29:13,727: DEBUG/MainProcess] pidbox received method hello(revoked={}, from_node=u'priority_queue_worker@less_queue_worker') [reply_to:{u'routing_key': u'edcf6471-2a21-3c84-8c0f-c58a9d2ee0a8', u'exchange': u'reply.celery.pidbox'} ticket:7d42a4ce-b721-4130-9aad-6a40263614b2]
+[2017-10-25 14:29:13,727: INFO/MainProcess] sync with priority_queue_worker@less_queue_worker
+[2017-10-25 14:29:14,132: DEBUG/MainProcess] less_queue@less_queue_worker joined the party
+[2017-10-25 14:29:14,439: DEBUG/MainProcess] priority_queue@less_queue_worker joined the party
+[2017-10-25 14:29:14,759: DEBUG/MainProcess] priority_queue_worker@less_queue_worker joined the party
+[2017-10-25 14:29:15,510: DEBUG/MainProcess] worker@less_queue_worker joined the party
+[2017-10-25 14:29:16,044: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2017-10-25 14:29:16,044: INFO/MainProcess] Events of group {task} enabled by remote.
+[2017-10-25 14:29:21,043: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2017-10-25 14:29:26,043: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2017-10-25 14:29:31,043: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2017-10-25 14:29:36,043: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2017-10-25 14:29:41,043: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2017-10-25 14:29:46,043: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2017-10-25 14:29:51,043: DEBUG/MainProcess] pidbox received method enable_events() [reply_to:None ticket:None]
+[2017-10-25 14:29:55,970: DEBUG/MainProcess] | Worker: Closing Hub...
+[2017-10-25 14:29:55,970: DEBUG/MainProcess] | Worker: Closing Pool...
+[2017-10-25 14:29:55,971: DEBUG/MainProcess] | Worker: Closing Consumer...
+[2017-10-25 14:29:55,971: DEBUG/MainProcess] | Worker: Stopping Consumer...
+[2017-10-25 14:29:55,971: DEBUG/MainProcess] | Consumer: Closing Connection...
+[2017-10-25 14:29:55,971: DEBUG/MainProcess] | Consumer: Closing Events...
+[2017-10-25 14:29:55,971: DEBUG/MainProcess] | Consumer: Closing Mingle...
+[2017-10-25 14:29:55,971: DEBUG/MainProcess] | Consumer: Closing Gossip...
+[2017-10-25 14:29:55,971: DEBUG/MainProcess] | Consumer: Closing Tasks...
+[2017-10-25 14:29:55,971: DEBUG/MainProcess] | Consumer: Closing Control...
+[2017-10-25 14:29:55,971: DEBUG/MainProcess] | Consumer: Closing Heart...
+[2017-10-25 14:29:55,971: DEBUG/MainProcess] | Consumer: Closing event loop...
+[2017-10-25 14:29:55,972: DEBUG/MainProcess] | Consumer: Stopping event loop...
+[2017-10-25 14:29:55,972: DEBUG/MainProcess] | Consumer: Stopping Heart...
+[2017-10-25 14:29:55,972: DEBUG/MainProcess] | Consumer: Stopping Control...
+[2017-10-25 14:29:55,974: DEBUG/MainProcess] | Consumer: Stopping Tasks...
+[2017-10-25 14:29:55,974: DEBUG/MainProcess] Canceling task consumer...
+[2017-10-25 14:29:55,974: DEBUG/MainProcess] | Consumer: Stopping Gossip...
+[2017-10-25 14:29:55,975: DEBUG/MainProcess] | Consumer: Stopping Mingle...
+[2017-10-25 14:29:55,976: DEBUG/MainProcess] | Consumer: Stopping Events...
+[2017-10-25 14:29:55,976: DEBUG/MainProcess] | Consumer: Stopping Connection...
+[2017-10-25 14:29:55,976: DEBUG/MainProcess] | Worker: Stopping Pool...
+[2017-10-25 14:29:56,998: DEBUG/MainProcess] | Worker: Stopping Hub...
+[2017-10-25 14:29:56,999: DEBUG/MainProcess] | Consumer: Shutdown Heart...
+[2017-10-25 14:29:56,999: DEBUG/MainProcess] | Consumer: Shutdown Control...
+[2017-10-25 14:29:56,999: DEBUG/MainProcess] | Consumer: Shutdown Tasks...
+[2017-10-25 14:29:56,999: DEBUG/MainProcess] Canceling task consumer...
+[2017-10-25 14:29:56,999: DEBUG/MainProcess] Closing consumer channel...
+[2017-10-25 14:29:56,999: DEBUG/MainProcess] | Consumer: Shutdown Gossip...
+[2017-10-25 14:29:57,000: DEBUG/MainProcess] | Consumer: Shutdown Events...
+[2017-10-25 14:29:57,000: DEBUG/MainProcess] | Consumer: Shutdown Connection...
+[2017-10-25 14:29:57,001: DEBUG/MainProcess] removing tasks from inqueue until task handler finished
+[2017-10-25 15:38:11,379: INFO/MainProcess] Connected to redis://localhost:6379/0
+[2017-10-25 15:38:11,384: INFO/MainProcess] mingle: searching for neighbors
+[2017-10-25 15:38:12,394: INFO/MainProcess] mingle: sync with 5 nodes
+[2017-10-25 15:38:12,395: INFO/MainProcess] mingle: sync complete
+[2017-10-25 15:38:12,407: WARNING/MainProcess] /home/admin3/Project/venv/local/lib/python2.7/site-packages/celery/fixups/django.py:265: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+
+[2017-10-25 15:38:12,408: WARNING/MainProcess] 2@admin3-Lenovo-V110-15ISK ready.
+[2017-10-25 15:38:14,418: INFO/MainProcess] Events of group {task} enabled by remote.
+[2017-10-25 15:42:50,660: INFO/MainProcess] Connected to redis://localhost:6379/0
+[2017-10-25 15:42:50,667: INFO/MainProcess] mingle: searching for neighbors
+[2017-10-25 15:42:51,673: INFO/MainProcess] mingle: all alone
+[2017-10-25 15:42:51,685: WARNING/MainProcess] /home/admin3/Project/venv/local/lib/python2.7/site-packages/celery/fixups/django.py:265: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+
+[2017-10-25 15:42:51,686: WARNING/MainProcess] 2@admin3-Lenovo-V110-15ISK ready.
+[2017-10-25 15:42:56,293: INFO/MainProcess] Events of group {task} enabled by remote.
+[2017-10-25 15:43:03,895: INFO/MainProcess] Received task: app1.tasks.test[283ee7b8-68a7-4963-9aaa-e3d254bfb971]
+[2017-10-25 15:43:03,909: INFO/MainProcess] Task app1.tasks.test[283ee7b8-68a7-4963-9aaa-e3d254bfb971] succeeded in 0.00548420700034s: u'The test task executed with argument "y=This is Test" '
+[2017-10-25 15:43:29,247: INFO/MainProcess] Received task: app1.tasks.test[d88b0a73-76e4-4a91-928f-e9a58674170b]
+[2017-10-25 15:43:29,260: INFO/MainProcess] Task app1.tasks.test[d88b0a73-76e4-4a91-928f-e9a58674170b] succeeded in 0.00586436900085s: u'The test task executed with argument "y=This is Test" '
+[2017-10-25 15:44:27,929: INFO/MainProcess] sync with celery1@admin3-Lenovo-V110-15ISK
+[2017-10-25 15:44:28,347: INFO/MainProcess] sync with celery2@admin3-Lenovo-V110-15ISK
+[2017-10-25 15:44:28,643: INFO/MainProcess] sync with celery3@admin3-Lenovo-V110-15ISK
+[2017-10-25 15:45:29,120: INFO/MainProcess] Connected to redis://localhost:6379/0
+[2017-10-25 15:45:29,126: INFO/MainProcess] mingle: searching for neighbors
+[2017-10-25 15:45:30,131: INFO/MainProcess] mingle: all alone
+[2017-10-25 15:45:30,143: WARNING/MainProcess] /home/admin3/Project/venv/local/lib/python2.7/site-packages/celery/fixups/django.py:265: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+
+[2017-10-25 15:45:30,143: WARNING/MainProcess] 2@admin3-Lenovo-V110-15ISK ready.
+[2017-10-25 15:45:31,294: INFO/MainProcess] Events of group {task} enabled by remote.
+[2017-10-25 15:45:42,720: INFO/MainProcess] Received task: app1.tasks.test[a626b820-6f05-4856-b841-426552073f82]
+[2017-10-25 15:45:42,733: INFO/MainProcess] Task app1.tasks.test[a626b820-6f05-4856-b841-426552073f82] succeeded in 0.00545770099961s: u'The test task executed with argument "y=This is Test" '
+[2017-10-25 15:45:43,976: INFO/MainProcess] Received task: app1.tasks.test[0b18b941-d8f3-4e59-8502-570ce4144dd1]
+[2017-10-25 15:45:43,989: INFO/MainProcess] Task app1.tasks.test[0b18b941-d8f3-4e59-8502-570ce4144dd1] succeeded in 0.0066317740002s: u'The test task executed with argument "y=This is Test" '
+[2017-10-25 15:46:44,804: INFO/MainProcess] Connected to redis://localhost:6379/0
+[2017-10-25 15:46:44,813: INFO/MainProcess] mingle: searching for neighbors
+[2017-10-25 15:46:45,817: INFO/MainProcess] mingle: all alone
+[2017-10-25 15:46:45,825: WARNING/MainProcess] /home/admin3/Project/venv/local/lib/python2.7/site-packages/celery/fixups/django.py:265: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+
+[2017-10-25 15:46:45,825: WARNING/MainProcess] 2@admin3-Lenovo-V110-15ISK ready.
+[2017-10-25 15:46:46,293: INFO/MainProcess] Events of group {task} enabled by remote.

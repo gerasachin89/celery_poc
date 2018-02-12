@@ -1,0 +1,156 @@
+[2017-10-25 19:04:02,310: WARNING/MainProcess] /home/admin3/Project/venv/local/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+[2017-10-25 19:04:02,384: INFO/MainProcess] Connected to amqp://guest:**@127.0.0.1:5672//
+[2017-10-25 19:04:02,393: INFO/MainProcess] mingle: searching for neighbors
+[2017-10-25 19:04:03,400: INFO/MainProcess] mingle: all alone
+[2017-10-25 19:04:03,416: WARNING/MainProcess] celery3@admin3-Lenovo-V110-15ISK ready.
+[2017-10-25 19:04:03,584: INFO/MainProcess] sync with celery6@admin3-Lenovo-V110-15ISK
+[2017-10-25 19:04:04,325: INFO/MainProcess] sync with celery7@admin3-Lenovo-V110-15ISK
+[2017-10-25 19:04:04,363: INFO/MainProcess] sync with celery8@admin3-Lenovo-V110-15ISK
+[2017-10-25 19:04:04,796: INFO/MainProcess] sync with celery9@admin3-Lenovo-V110-15ISK
+[2017-10-25 15:13:54,022: INFO/MainProcess] Connected to redis://localhost:6379/0
+[2017-10-25 15:13:54,028: INFO/MainProcess] mingle: searching for neighbors
+[2017-10-25 15:13:55,033: INFO/MainProcess] mingle: sync with 1 nodes
+[2017-10-25 15:13:55,034: INFO/MainProcess] mingle: sync complete
+[2017-10-25 15:13:55,044: WARNING/MainProcess] /home/admin3/Project/venv/local/lib/python2.7/site-packages/celery/fixups/django.py:265: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+
+[2017-10-25 15:13:55,047: WARNING/MainProcess] celery3@admin3-Lenovo-V110-15ISK ready.
+[2017-10-25 15:13:55,367: INFO/MainProcess] sync with celery6@admin3-Lenovo-V110-15ISK
+[2017-10-25 15:13:55,997: INFO/MainProcess] sync with celery7@admin3-Lenovo-V110-15ISK
+[2017-10-25 15:13:56,042: INFO/MainProcess] Events of group {task} enabled by remote.
+[2017-10-25 15:13:56,351: INFO/MainProcess] sync with celery8@admin3-Lenovo-V110-15ISK
+[2017-10-25 15:13:56,566: INFO/MainProcess] sync with celery9@admin3-Lenovo-V110-15ISK
+[2017-10-25 15:13:56,870: INFO/MainProcess] sync with celery10@admin3-Lenovo-V110-15ISK
+[2017-10-25 15:15:12,213: INFO/MainProcess] Received task: app1.tasks.test[76d52559-d3c1-4dc4-b3af-6f3e572027b5]
+[2017-10-25 15:15:12,217: INFO/MainProcess] Task app1.tasks.test[76d52559-d3c1-4dc4-b3af-6f3e572027b5] succeeded in 0.00115759899927s: u'The test task executed with argument "y=This is Test" '
+[2017-10-25 15:15:19,725: INFO/MainProcess] Received task: app1.tasks.test[84723700-3c2e-4b9d-9d36-d77032399f3d]
+[2017-10-25 15:15:19,753: INFO/MainProcess] Task app1.tasks.test[84723700-3c2e-4b9d-9d36-d77032399f3d] succeeded in 0.0122621589999s: u'The test task executed with argument "y=This is Test" '
+[2017-10-25 15:15:22,837: INFO/MainProcess] Received task: app1.tasks.test[3fd0ce4a-a6a6-4d6c-9ee0-133b98e5fbfb]
+[2017-10-25 15:15:22,867: INFO/MainProcess] Task app1.tasks.test[3fd0ce4a-a6a6-4d6c-9ee0-133b98e5fbfb] succeeded in 0.00643164299981s: u'The test task executed with argument "y=This is Test" '
+[2017-10-25 15:15:26,113: INFO/MainProcess] Received task: app1.tasks.test[a13ddd86-bd7f-4d18-ae21-00fc50802bbb]
+[2017-10-25 15:15:26,150: INFO/MainProcess] Task app1.tasks.test[a13ddd86-bd7f-4d18-ae21-00fc50802bbb] succeeded in 0.00904106399958s: u'The test task executed with argument "y=This is Test" '
+[2017-10-25 15:15:28,255: INFO/MainProcess] Received task: app1.tasks.test[97e08262-0654-4396-b262-36ef4d192932]
+[2017-10-25 15:15:28,259: INFO/MainProcess] Task app1.tasks.test[97e08262-0654-4396-b262-36ef4d192932] succeeded in 0.00187579700014s: u'The test task executed with argument "y=This is Test" '
+[2017-10-25 15:15:30,347: INFO/MainProcess] Received task: app1.tasks.test[1b3be830-2972-4a97-8ebd-e3fde9b96b62]
+[2017-10-25 15:15:30,370: INFO/MainProcess] Task app1.tasks.test[1b3be830-2972-4a97-8ebd-e3fde9b96b62] succeeded in 0.0117434860003s: u'The test task executed with argument "y=This is Test" '
+[2017-10-25 15:15:32,425: INFO/MainProcess] Received task: app1.tasks.test[df63aaec-0b17-4b28-bfb0-111ac1d47339]
+[2017-10-25 15:15:32,451: INFO/MainProcess] Task app1.tasks.test[df63aaec-0b17-4b28-bfb0-111ac1d47339] succeeded in 0.00918545399963s: u'The test task executed with argument "y=This is Test" '
+[2017-10-25 15:16:12,304: INFO/MainProcess] Received task: app1.tasks.test[26144700-4b33-4b99-8040-e4f27bcce903]
+[2017-10-25 15:16:12,327: INFO/MainProcess] Task app1.tasks.test[26144700-4b33-4b99-8040-e4f27bcce903] succeeded in 0.00934729800065s: u'The test task executed with argument "y=This is Test" '
+[2017-10-25 15:16:13,138: INFO/MainProcess] Received task: app1.tasks.test[7f951176-d28d-4398-911c-2a0b2dcb417b]
+[2017-10-25 15:16:13,158: INFO/MainProcess] Task app1.tasks.test[7f951176-d28d-4398-911c-2a0b2dcb417b] succeeded in 0.00909560200034s: u'The test task executed with argument "y=This is Test" '
+[2017-10-25 15:16:16,412: INFO/MainProcess] Received task: app1.tasks.test[34ea53e6-efa6-492e-a644-a60f152e08d1]
+[2017-10-25 15:16:16,429: INFO/MainProcess] Task app1.tasks.test[34ea53e6-efa6-492e-a644-a60f152e08d1] succeeded in 0.00552181100011s: u'The test task executed with argument "y=This is Test" '
+[2017-10-25 15:16:18,593: INFO/MainProcess] Received task: app1.tasks.test[0270128c-54a9-42c5-8d79-1224b7f8b11a]
+[2017-10-25 15:16:18,621: INFO/MainProcess] Task app1.tasks.test[0270128c-54a9-42c5-8d79-1224b7f8b11a] succeeded in 0.00865697400059s: u'The test task executed with argument "y=This is Test" '
+[2017-10-25 15:17:28,083: INFO/MainProcess] Connected to redis://localhost:6379/0
+[2017-10-25 15:17:28,094: INFO/MainProcess] mingle: searching for neighbors
+[2017-10-25 15:17:29,100: INFO/MainProcess] mingle: all alone
+[2017-10-25 15:17:29,109: WARNING/MainProcess] /home/admin3/Project/venv/local/lib/python2.7/site-packages/celery/fixups/django.py:265: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+
+[2017-10-25 15:17:29,110: WARNING/MainProcess] celery3@admin3-Lenovo-V110-15ISK ready.
+[2017-10-25 15:17:29,396: INFO/MainProcess] sync with celery5@admin3-Lenovo-V110-15ISK
+[2017-10-25 15:17:29,499: INFO/MainProcess] sync with celery6@admin3-Lenovo-V110-15ISK
+[2017-10-25 15:17:30,559: INFO/MainProcess] sync with celery7@admin3-Lenovo-V110-15ISK
+[2017-10-25 15:17:30,631: INFO/MainProcess] sync with celery8@admin3-Lenovo-V110-15ISK
+[2017-10-25 15:17:30,914: INFO/MainProcess] sync with celery9@admin3-Lenovo-V110-15ISK
+[2017-10-25 15:17:31,040: INFO/MainProcess] Events of group {task} enabled by remote.
+[2017-10-25 15:17:31,340: INFO/MainProcess] sync with celery10@admin3-Lenovo-V110-15ISK
+[2017-10-25 15:29:29,377: INFO/MainProcess] Connected to redis://localhost:6379/0
+[2017-10-25 15:29:29,386: INFO/MainProcess] mingle: searching for neighbors
+[2017-10-25 15:29:30,393: INFO/MainProcess] mingle: all alone
+[2017-10-25 15:29:30,414: WARNING/MainProcess] /home/admin3/Project/venv/local/lib/python2.7/site-packages/celery/fixups/django.py:265: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+
+[2017-10-25 15:29:30,415: WARNING/MainProcess] celery3@admin3-Lenovo-V110-15ISK ready.
+[2017-10-25 15:29:34,417: INFO/MainProcess] Events of group {task} enabled by remote.
+[2017-10-25 15:30:22,289: INFO/MainProcess] Received task: app1.tasks.test[740cd11b-47ff-4a8b-8388-8eae689c4239]
+[2017-10-25 15:30:22,308: INFO/MainProcess] Task app1.tasks.test[740cd11b-47ff-4a8b-8388-8eae689c4239] succeeded in 0.00747619100002s: u'The test task executed with argument "y=This is Test" '
+[2017-10-25 15:38:11,386: INFO/MainProcess] sync with 2@admin3-Lenovo-V110-15ISK
+[2017-10-25 15:38:11,595: INFO/MainProcess] sync with default@admin3-Lenovo-V110-15ISK
+[2017-10-25 15:44:28,635: INFO/MainProcess] Connected to redis://localhost:6379/0
+[2017-10-25 15:44:28,641: INFO/MainProcess] mingle: searching for neighbors
+[2017-10-25 15:44:29,648: INFO/MainProcess] mingle: sync with 2 nodes
+[2017-10-25 15:44:29,649: INFO/MainProcess] mingle: sync complete
+[2017-10-25 15:44:29,669: WARNING/MainProcess] /home/admin3/Project/venv/local/lib/python2.7/site-packages/celery/fixups/django.py:265: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+
+[2017-10-25 15:44:29,670: WARNING/MainProcess] celery3@admin3-Lenovo-V110-15ISK ready.
+[2017-10-25 15:44:31,294: INFO/MainProcess] Events of group {task} enabled by remote.
+[2017-10-25 15:51:13,335: INFO/MainProcess] Connected to redis://localhost:6379/0
+[2017-10-25 15:51:13,341: INFO/MainProcess] mingle: searching for neighbors
+[2017-10-25 15:51:14,347: INFO/MainProcess] mingle: all alone
+[2017-10-25 15:51:14,359: WARNING/MainProcess] /home/admin3/Project/venv/local/lib/python2.7/site-packages/celery/fixups/django.py:265: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+
+[2017-10-25 15:51:14,359: WARNING/MainProcess] celery3@admin3-Lenovo-V110-15ISK ready.
+[2017-10-25 15:51:14,524: INFO/MainProcess] Received task: app1.tasks.test[245ec5e4-6a06-4c87-9e4f-f6d4c3f77f88]
+[2017-10-25 15:51:14,528: INFO/MainProcess] Received task: app1.tasks.test[64610877-123e-491f-a5ff-5cf55462c81b]
+[2017-10-25 15:51:14,535: INFO/MainProcess] Task app1.tasks.test[245ec5e4-6a06-4c87-9e4f-f6d4c3f77f88] succeeded in 0.00452500900064s: u'The test task executed with argument "y=This is Test" '
+[2017-10-25 15:51:14,536: INFO/MainProcess] Task app1.tasks.test[64610877-123e-491f-a5ff-5cf55462c81b] succeeded in 0.00578282499919s: u'The test task executed with argument "y=This is Test" '
+[2017-10-25 15:51:14,539: INFO/MainProcess] Received task: app1.tasks.test[c01f3020-d10e-4cb4-8ff0-e1d4baef2a36]
+[2017-10-25 15:51:14,543: INFO/MainProcess] Received task: app1.tasks.test[cbb17bb1-a69a-475c-9c5f-47dd8833ba84]
+[2017-10-25 15:51:14,548: INFO/MainProcess] Task app1.tasks.test[c01f3020-d10e-4cb4-8ff0-e1d4baef2a36] succeeded in 0.00381298200045s: u'The test task executed with argument "y=This is Test" '
+[2017-10-25 15:51:14,549: INFO/MainProcess] Task app1.tasks.test[cbb17bb1-a69a-475c-9c5f-47dd8833ba84] succeeded in 0.00485649199982s: u'The test task executed with argument "y=This is Test" '
+[2017-10-25 15:51:14,551: INFO/MainProcess] Received task: app1.tasks.test[3cbdb9d4-2fd0-44de-91c3-a8c7eb3dcd29]
+[2017-10-25 15:51:14,555: INFO/MainProcess] Received task: app1.tasks.test[39d58d61-3bb9-4133-9dbd-3f28bcd037b9]
+[2017-10-25 15:51:14,558: INFO/MainProcess] Received task: app1.tasks.test[81b662c3-a3a4-42ae-a10d-b8a25137f515]
+[2017-10-25 15:51:14,561: INFO/MainProcess] Received task: app1.tasks.test[b1817feb-b20b-4f07-93d8-53738a839422]
+[2017-10-25 15:51:14,562: INFO/MainProcess] Task app1.tasks.test[3cbdb9d4-2fd0-44de-91c3-a8c7eb3dcd29] succeeded in 0.00596405499891s: u'The test task executed with argument "y=This is Test" '
+[2017-10-25 15:51:14,562: INFO/MainProcess] Task app1.tasks.test[39d58d61-3bb9-4133-9dbd-3f28bcd037b9] succeeded in 0.00644769000064s: u'The test task executed with argument "y=This is Test" '
+[2017-10-25 15:51:14,564: INFO/MainProcess] Received task: app1.tasks.test[059144f9-03d9-48b2-9d26-38f5be270db5]
+[2017-10-25 15:51:14,566: INFO/MainProcess] Received task: app1.tasks.test[946c463f-fd7c-4d06-bbd9-30307e5208c1]
+[2017-10-25 15:51:14,567: INFO/MainProcess] Task app1.tasks.test[81b662c3-a3a4-42ae-a10d-b8a25137f515] succeeded in 0.00447608300055s: u'The test task executed with argument "y=This is Test" '
+[2017-10-25 15:51:14,567: INFO/MainProcess] Task app1.tasks.test[b1817feb-b20b-4f07-93d8-53738a839422] succeeded in 0.0048702619988s: u'The test task executed with argument "y=This is Test" '
+[2017-10-25 15:51:14,569: INFO/MainProcess] Received task: app1.tasks.test[725e085e-30e6-4989-95de-22dd55b8daa5]
+[2017-10-25 15:51:14,571: INFO/MainProcess] Received task: app1.tasks.test[004c1f49-cbca-4787-a61c-8a26a381103e]
+[2017-10-25 15:51:14,572: INFO/MainProcess] Task app1.tasks.test[946c463f-fd7c-4d06-bbd9-30307e5208c1] succeeded in 0.003758664001s: u'The test task executed with argument "y=This is Test" '
+[2017-10-25 15:51:14,572: INFO/MainProcess] Task app1.tasks.test[059144f9-03d9-48b2-9d26-38f5be270db5] succeeded in 0.00407820500004s: u'The test task executed with argument "y=This is Test" '
+[2017-10-25 15:51:14,574: INFO/MainProcess] Task app1.tasks.test[004c1f49-cbca-4787-a61c-8a26a381103e] succeeded in 0.0012450660015s: u'The test task executed with argument "y=This is Test" '
+[2017-10-25 15:51:14,574: INFO/MainProcess] Task app1.tasks.test[725e085e-30e6-4989-95de-22dd55b8daa5] succeeded in 0.00160476400015s: u'The test task executed with argument "y=This is Test" '
+[2017-10-25 15:51:14,575: INFO/MainProcess] Received task: app1.tasks.test[f614dd91-ac6c-4ea4-88d9-900e55016d11]
+[2017-10-25 15:51:14,576: INFO/MainProcess] Received task: app1.tasks.test[a75e3bf5-b961-40bb-a12b-9abebfe4a3c8]
+[2017-10-25 15:51:14,577: INFO/MainProcess] Task app1.tasks.test[a75e3bf5-b961-40bb-a12b-9abebfe4a3c8] succeeded in 0.0011236320006s: u'The test task executed with argument "y=This is Test" '
+[2017-10-25 15:51:14,578: INFO/MainProcess] Task app1.tasks.test[f614dd91-ac6c-4ea4-88d9-900e55016d11] succeeded in 0.00146643400149s: u'The test task executed with argument "y=This is Test" '
+[2017-10-25 15:51:14,579: INFO/MainProcess] Received task: app1.tasks.test[199f285f-68df-4a59-a5f9-30d6e308cdc7]
+[2017-10-25 15:51:14,580: INFO/MainProcess] Received task: app1.tasks.test[ded4cd6f-67f3-4feb-b30f-0d36ef2aba1a]
+[2017-10-25 15:51:14,581: INFO/MainProcess] Received task: app1.tasks.test[0d1078e7-c722-418c-b7e1-33c537ac5de6]
+[2017-10-25 15:51:14,583: INFO/MainProcess] Received task: app1.tasks.test[1e69e412-2f41-449d-831c-a589034eaf9b]
+[2017-10-25 15:51:14,584: INFO/MainProcess] Task app1.tasks.test[199f285f-68df-4a59-a5f9-30d6e308cdc7] succeeded in 0.00327625499995s: u'The test task executed with argument "y=This is Test" '
+[2017-10-25 15:51:14,584: INFO/MainProcess] Task app1.tasks.test[ded4cd6f-67f3-4feb-b30f-0d36ef2aba1a] succeeded in 0.00356031400042s: u'The test task executed with argument "y=This is Test" '
+[2017-10-25 15:51:14,585: INFO/MainProcess] Received task: app1.tasks.test[bc17330f-9692-49f8-9a8b-d261eeff51f9]
+[2017-10-25 15:51:14,588: INFO/MainProcess] Received task: app1.tasks.test[157171e4-0562-4fe7-8644-ab9f073d9c1a]
+[2017-10-25 15:51:14,588: INFO/MainProcess] Task app1.tasks.test[1e69e412-2f41-449d-831c-a589034eaf9b] succeeded in 0.00381087599999s: u'The test task executed with argument "y=This is Test" '
+[2017-10-25 15:51:14,588: INFO/MainProcess] Task app1.tasks.test[0d1078e7-c722-418c-b7e1-33c537ac5de6] succeeded in 0.00410027499856s: u'The test task executed with argument "y=This is Test" '
+[2017-10-25 15:51:14,590: INFO/MainProcess] Received task: app1.tasks.test[09e87112-3164-4e98-b61d-d24c8ab2eea7]
+[2017-10-25 15:51:14,591: INFO/MainProcess] Received task: app1.tasks.test[daf37ff2-4d5c-4125-ba9f-ed4e5ca0a712]
+[2017-10-25 15:51:14,592: INFO/MainProcess] Task app1.tasks.test[bc17330f-9692-49f8-9a8b-d261eeff51f9] succeeded in 0.00315687700095s: u'The test task executed with argument "y=This is Test" '
+[2017-10-25 15:51:14,592: INFO/MainProcess] Task app1.tasks.test[157171e4-0562-4fe7-8644-ab9f073d9c1a] succeeded in 0.00341107500026s: u'The test task executed with argument "y=This is Test" '
+[2017-10-25 15:51:14,593: INFO/MainProcess] Received task: app1.tasks.test[48fe7522-8e28-4d90-b19c-2fe452d39a3c]
+[2017-10-25 15:51:14,595: INFO/MainProcess] Task app1.tasks.test[daf37ff2-4d5c-4125-ba9f-ed4e5ca0a712] succeeded in 0.0022815780012s: u'The test task executed with argument "y=This is Test" '
+[2017-10-25 15:51:14,595: INFO/MainProcess] Task app1.tasks.test[09e87112-3164-4e98-b61d-d24c8ab2eea7] succeeded in 0.00260261699987s: u'The test task executed with argument "y=This is Test" '
+[2017-10-25 15:51:14,596: INFO/MainProcess] Task app1.tasks.test[48fe7522-8e28-4d90-b19c-2fe452d39a3c] succeeded in 0.000795207999545s: u'The test task executed with argument "y=This is Test" '
+[2017-10-25 15:51:16,292: INFO/MainProcess] Events of group {task} enabled by remote.
+[2017-10-25 15:52:16,815: INFO/MainProcess] Received task: app1.tasks.test[f296e86e-38da-4021-a00a-3506ac7d9a06]
+[2017-10-25 15:52:16,830: INFO/MainProcess] Task app1.tasks.test[f296e86e-38da-4021-a00a-3506ac7d9a06] succeeded in 0.0065012619998s: u'The test task executed with argument "y=This is Test" '
+[2017-10-25 15:52:18,519: INFO/MainProcess] Received task: app1.tasks.test[4a38003f-3a6f-412b-b1ae-57e7e72e5e37]
+[2017-10-25 15:52:18,533: INFO/MainProcess] Task app1.tasks.test[4a38003f-3a6f-412b-b1ae-57e7e72e5e37] succeeded in 0.00595406100001s: u'The test task executed with argument "y=This is Test" '

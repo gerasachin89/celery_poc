@@ -1,0 +1,49 @@
+[2017-10-25 19:04:03,475: WARNING/MainProcess] /home/admin3/Project/venv/local/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+[2017-10-25 19:04:03,563: INFO/MainProcess] Connected to amqp://guest:**@127.0.0.1:5672//
+[2017-10-25 19:04:03,578: INFO/MainProcess] mingle: searching for neighbors
+[2017-10-25 19:04:04,590: INFO/MainProcess] mingle: sync with 3 nodes
+[2017-10-25 19:04:04,591: INFO/MainProcess] mingle: sync complete
+[2017-10-25 19:04:04,800: WARNING/MainProcess] celery6@admin3-Lenovo-V110-15ISK ready.
+[2017-10-25 19:04:04,808: INFO/MainProcess] sync with celery9@admin3-Lenovo-V110-15ISK
+[2017-10-25 15:13:55,343: INFO/MainProcess] Connected to redis://localhost:6379/0
+[2017-10-25 15:13:55,360: INFO/MainProcess] mingle: searching for neighbors
+[2017-10-25 15:13:56,379: INFO/MainProcess] mingle: sync with 4 nodes
+[2017-10-25 15:13:56,380: INFO/MainProcess] mingle: sync complete
+[2017-10-25 15:13:56,393: WARNING/MainProcess] /home/admin3/Project/venv/local/lib/python2.7/site-packages/celery/fixups/django.py:265: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+
+[2017-10-25 15:13:56,393: WARNING/MainProcess] celery6@admin3-Lenovo-V110-15ISK ready.
+[2017-10-25 15:13:56,566: INFO/MainProcess] sync with celery9@admin3-Lenovo-V110-15ISK
+[2017-10-25 15:13:56,869: INFO/MainProcess] sync with celery10@admin3-Lenovo-V110-15ISK
+[2017-10-25 15:14:01,047: INFO/MainProcess] Events of group {task} enabled by remote.
+[2017-10-25 15:17:29,478: INFO/MainProcess] Connected to redis://localhost:6379/0
+[2017-10-25 15:17:29,493: INFO/MainProcess] mingle: searching for neighbors
+[2017-10-25 15:17:30,512: INFO/MainProcess] mingle: sync with 3 nodes
+[2017-10-25 15:17:30,512: INFO/MainProcess] mingle: sync complete
+[2017-10-25 15:17:30,521: WARNING/MainProcess] /home/admin3/Project/venv/local/lib/python2.7/site-packages/celery/fixups/django.py:265: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+
+[2017-10-25 15:17:30,522: WARNING/MainProcess] celery6@admin3-Lenovo-V110-15ISK ready.
+[2017-10-25 15:17:30,557: INFO/MainProcess] sync with celery7@admin3-Lenovo-V110-15ISK
+[2017-10-25 15:17:30,632: INFO/MainProcess] sync with celery8@admin3-Lenovo-V110-15ISK
+[2017-10-25 15:17:30,916: INFO/MainProcess] sync with celery9@admin3-Lenovo-V110-15ISK
+[2017-10-25 15:17:31,042: INFO/MainProcess] Events of group {task} enabled by remote.
+[2017-10-25 15:17:31,342: INFO/MainProcess] sync with celery10@admin3-Lenovo-V110-15ISK
