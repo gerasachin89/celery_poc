@@ -9,5 +9,5 @@ def add(x, y):
 
 
 @shared_task
-def mul(x, y):
+def mexitul(x, y):
     return x * y

@@ -43,6 +43,7 @@ INSTALLED_APPS = (
     'app1',
     'app2',
     'rest_framework',
+    'django_extensions',
 )
 
 MIDDLEWARE_CLASSES = (
