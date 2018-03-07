@@ -111,6 +111,8 @@ BROKER_URL = 'redis://localhost:6379/0'
 CELERY_ACCEPT_CONTENT = ['json']
 CELERY_TASK_SERIALIZER = 'json'
 CELERY_RESULT_SERIALIZER = 'json'
+CELERY_ACKS_LATE = True # reissue task if worker shutdown
+MAX_RETRIES = 5
 
 
 #CELERY_ROUTES = {'app1.tasks.test': {'queue': 'feeds'}}
@@ -120,31 +122,31 @@ CELERY_RESULT_SERIALIZER = 'json'
 #     'cel_poc.app2.tasks.add': {'queue': 'quick_queue'},
 # }
 
-from kombu import Connection, Exchange, Queue
-default_exchange = Exchange('default', type='direct')
-priority_exchange = Exchange('priority_queue', type='direct')
-less_exchange = Exchange('less_queue', type='direct')
-
-CELERY_QUEUES = (
-    Queue('default', default_exchange, routing_key='default'),
-    Queue('priority_queue', priority_exchange, routing_key='priority_queue'),
-    Queue('less_queue', less_exchange, routing_key='less_queue'),
-)
-CELERY_DEFAULT_QUEUE = 'default'
-CELERY_DEFAULT_EXCHANGE = 'default'
-CELERY_DEFAULT_ROUTING_KEY = 'default'
-
-# CELERY_ROUTES = ({'app1.tasks': {
-#                         'queue': 'priority_queue',
-#                         'routing_key': 'priority_queue'
-#                  }}, )
-CELERYD_NODES=10
-CELERY_ROUTES = {
-    'cel_poc.app1.tasks.test': {
-        'queue': 'priority_queue',
-        'routing_key': 'priority_queue',
-    },
-}
+# from kombu import Connection, Exchange, Queue
+# default_exchange = Exchange('default', type='direct')
+# priority_exchange = Exchange('priority_queue', type='direct')
+# less_exchange = Exchange('less_queue', type='direct')
+#
+# CELERY_QUEUES = (
+#     Queue('default', default_exchange, routing_key='default'),
+#     Queue('priority_queue', priority_exchange, routing_key='priority_queue'),
+#     Queue('less_queue', less_exchange, routing_key='less_queue'),
+# )
+# CELERY_DEFAULT_QUEUE = 'default'
+# CELERY_DEFAULT_EXCHANGE = 'default'
+# CELERY_DEFAULT_ROUTING_KEY = 'default'
+#
+# # CELERY_ROUTES = ({'app1.tasks': {
+# #                         'queue': 'priority_queue',
+# #                         'routing_key': 'priority_queue'
+# #                  }}, )
+# CELERYD_NODES=10
+# CELERY_ROUTES = {
+#     'cel_poc.app1.tasks.test': {
+#         'queue': 'priority_queue',
+#         'routing_key': 'priority_queue',
+#     },
+# }
 
 result_backend = 'db+sqlite:///results.sqlite'
 # Internationalization
