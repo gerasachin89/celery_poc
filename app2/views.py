@@ -13,18 +13,20 @@ conn = redis.Redis('localhost')
 
 
 def success(request):
-    print("EXPLAIN2",Person.objects.all().explain())                             # all query
+    if request.GET.get('office'):
+        print("$$$$$$$$", request.GET.get('office'))                               #if we passs query parameter ?office=foobar
+    #print("EXPLAIN2",Person.objects.all().explain())                             # all query
     #print("EXPLAIN",Article.objects.filter(publications=1).explain())           # M2M
     #print("EXPLAIN",Person.objects.filter(first_name='"Sachin"').explain())     # filter against CharField
     #print("EXPLAIN",Person.objects.filter(pk=1).explain())                      # filter against int(pk)
     #print("EXPLAIN1",Person.objects.filter(id='1').explain())                   # filter against int(pk)
     #print("EXPLAIN", Person.objects.filter(office__id=1).explain())             # M2M Reverse
 
-    print("REDIS DICTIONARY",Person.objects.last().__dict__)
+    #print("REDIS DICTIONARY",Person.objects.last().__dict__)
     redis_dict = Person.objects.last().__dict__
     a = conn.hmset("pythonDict", redis_dict)
     b = conn.hgetall("pythonDict")
-    print("_______________b________________",b)
+    #print("_______________b________________",b)
 
     return HttpResponse(Person.objects.all().explain())
 
